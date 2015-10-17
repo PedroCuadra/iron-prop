@@ -1,0 +1,33 @@
+{
+  "name": "iron-prop",
+  "version": "0.1.0",
+  "description": "A simple and modificable proportional Div",
+  "authors": [
+    "Pedro Cuadra"
+  ],
+  "main": [
+    "iron-prop.html",
+  ],
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer",
+    "iron",
+    "prop",
+    "div",
+    "proportional"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PedroCuadra/iron-prop"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/PedroCuadra/iron-prop",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
