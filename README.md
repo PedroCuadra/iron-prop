@@ -9,9 +9,9 @@
 <iron-prop hprop="3" vprop="4" animate></iron-prop>
 ```
 
-hprop = your horizontal proportion (default=1)
+hprop = horizontal proportion (default=1)
 
-vprop = your verical proportion (default=1)
+vprop = vertical proportion (default=1)
 
 animate = (optional) you can animate the changes of its proportions
 
