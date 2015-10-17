@@ -1,0 +1,25 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="iron-prop">
+	<template>
+		<style>
+			:host{display:block;width:100%;position:relative;}
+			:host[animate] >div{transition:padding-top .25s ease-in-out}
+			:host>div{height:0;position:relative;overflow:visible}
+			:host>div>div{width:100%;height:100%;position:absolute; top: 0;}
+		</style>
+		<div><div><content></content></div></div>
+	</template>
+	<script>
+	Polymer({
+		is:"iron-prop",
+		properties:{
+			hprop  : {type:Number,value:1,observer:"_setProp"},
+			vprop  : {type:Number,value:1,observer:"_setProp"},
+		},
+		_setProp:function(){
+			$(this).find(">div").css({paddingTop:this.vprop*100/this.hprop+"%"})
+		},
+		attached:    function(){ this._setProp()}
+	})
+	</script>
+</dom-module>
